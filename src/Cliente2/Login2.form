@@ -120,7 +120,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cliente 1"/>
+        <Property name="text" type="java.lang.String" value="cliente 2"/>
       </Properties>
     </Component>
   </SubComponents>

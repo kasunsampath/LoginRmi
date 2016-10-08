@@ -24,7 +24,7 @@ public class LoginImplement extends UnicastRemoteObject implements LoginInterfac
         boolean found=false;
         try 
         {
-            if(user.equals("admin") && pass.equals("123"))
+            if(user.equals("admin") && pass.equals("123")||user.equals("admin1") && pass.equals("1234")||user.equals("admin2") && pass.equals("12345") )
             {
                 return found=true;
                
