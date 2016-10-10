@@ -136,7 +136,8 @@ public class Login2 extends javax.swing.JFrame {
             if(f==true)
             {
                 JOptionPane.showMessageDialog(null, "Login com sucesso");
-                
+                   MenuCantina menucan = new MenuCantina();
+            menucan.menu();
             }
             else {
                 JOptionPane.showMessageDialog(null, "Login Fail");

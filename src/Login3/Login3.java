@@ -138,6 +138,9 @@ public class Login3 extends javax.swing.JFrame {
             {
                 JOptionPane.showMessageDialog(null, "Login com sucesso");
                 
+                 
+            MenuCantina menucan = new MenuCantina();
+            menucan.menu();
             }
             else {
                 JOptionPane.showMessageDialog(null, "Login Fail");
