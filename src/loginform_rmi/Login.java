@@ -5,6 +5,7 @@
  */
 package loginform_rmi;
 
+import Menus.MenuCantina;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import javax.swing.JOptionPane;

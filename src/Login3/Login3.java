@@ -5,7 +5,9 @@
  */
 package Login3;
 
+import Menus.MenuCantina;
 import Cliente2.*;
+import Menus.Carteira;
 import loginform_rmi.*;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -128,6 +130,7 @@ public class Login3 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+         Carteira cart = new Carteira();
         boolean f=false;
         try 
         {
@@ -137,10 +140,24 @@ public class Login3 extends javax.swing.JFrame {
             if(f==true)
             {
                 JOptionPane.showMessageDialog(null, "Login com sucesso");
+                System.out.println("Seu saldo é de:"+cart.getCarteira());
+                  
+               
+                
                 
                  
             MenuCantina menucan = new MenuCantina();
             menucan.menu();
+            
+            
+            
+           
+           //double saldo =cart.getCarteira();
+           
+           
+           // saldo = saldo - Escolhida;
+            
+           // System.out.println("Seu saldo é de:"+saldo); 
             }
             else {
                 JOptionPane.showMessageDialog(null, "Login Fail");
