@@ -140,14 +140,16 @@ public class Login3 extends javax.swing.JFrame {
             if(f==true)
             {
                 JOptionPane.showMessageDialog(null, "Login com sucesso");
-                System.out.println("Seu saldo é de:"+cart.getCarteira());
-                  
-               
+                //System.out.println("Seu saldo é de:"+cart.getCarteira());
+                
+                  //Registry reg=LocateRegistry.getRegistry("127.0.0.1",1099);
+           LoginInterface i=(LoginInterface)reg.lookup("login");
+               LoginInterface y=
                 
                 
                  
-            MenuCantina menucan = new MenuCantina();
-            menucan.menu();
+         //   MenuCantina menucan = new MenuCantina();
+          //  menucan.menu();
             
             
             

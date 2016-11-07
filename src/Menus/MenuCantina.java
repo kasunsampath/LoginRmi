@@ -3,6 +3,7 @@ package Menus;
 
 import Menus.Produto;
 import Menus.Carteira;
+import java.rmi.Remote;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -16,7 +17,7 @@ import javax.swing.JOptionPane;
  *
  * @author DUDE
  */
-public class MenuCantina extends Produto{
+public class MenuCantina implements Remote  {
     
     Carteira cart = new Carteira();
     double prod;

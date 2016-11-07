@@ -9,52 +9,42 @@ package login_imprement;
  *
  * @author User
  */
-import Menus.Carteira;
-import Menus.MenuCantina;
 import java.rmi.*;
 import java.rmi.server.UnicastRemoteObject;
 import loginform_rmi.LoginInterface;
-public class LoginImplement extends UnicastRemoteObject implements LoginInterface
+public class CarteiraImplement extends UnicastRemoteObject implements LoginInterface
 {
-    
 
-    public LoginImplement()throws RemoteException
+    public CarteiraImplement()throws RemoteException
     {
      
     }
-    public boolean getLogin(String user, String pass) throws RemoteException 
+    public boolean getCarteira(String user, String pass) throws RemoteException 
     {
-         
         boolean found=false;
         try 
         {
             if(user.equals("admin") && pass.equals("123")||user.equals("admin1") && pass.equals("1234")||user.equals("admin2") && pass.equals("12345") )
             {
-           Carteira cart1 = new Carteira();
-                System.out.println("Seu saldo é de:"+cart1.getCarteira());
-    MenuCantina menucan = new MenuCantina();
-            menucan.menu();
                 return found=true;
-                
-                
-                
-              
-                
+               
             }
             else
             {
                 return found=false;
             }
         } 
-        
         catch (Exception ex) 
         {
             ex.printStackTrace();
         }
-       
         return found;
         
-        
+    }
+
+    @Override
+    public boolean getLogin(String user, String pass) throws RemoteException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
