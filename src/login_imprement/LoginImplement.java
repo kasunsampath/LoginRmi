@@ -30,10 +30,10 @@ public class LoginImplement extends UnicastRemoteObject implements LoginInterfac
         {
             if(user.equals("admin") && pass.equals("123")||user.equals("admin1") && pass.equals("1234")||user.equals("admin2") && pass.equals("12345") )
             {
-           Carteira cart1 = new Carteira();
-                System.out.println("Seu saldo é de:"+cart1.getCarteira());
-    MenuCantina menucan = new MenuCantina();
-            menucan.menu();
+          // Carteira cart1 = new Carteira();
+            //    System.out.println("Seu saldo é de:"+cart1.getCarteira());
+   // MenuCantina menucan = new MenuCantina();
+         //   menucan.menu();
                 return found=true;
                 
                 

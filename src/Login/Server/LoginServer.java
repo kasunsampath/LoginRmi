@@ -25,7 +25,7 @@ public class LoginServer
            LoginImplement lp=new LoginImplement();
            // aqui chama menu implementado.
            
-           MenuImplemente mp= new MenuImplemente();
+          MenuImplemente mp= new MenuImplemente();
            
            reg.rebind("login", lp);
            System.out.println("Servidor OK");
