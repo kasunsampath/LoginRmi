@@ -67,7 +67,7 @@ public class MenuCantina implements Remote  {
          double cafe = 2.00;
          double saldo =cart.getCarteira() - cafe;
          System.out.println("Você escolheu um café e será direcionado à fila de atendimento. O valor do produto é:"+cafe);
-         System.out.println(+saldo);
+         System.out.println("seu saldo restante é R$"+saldo+"Volte sempre!");
        
         
     }

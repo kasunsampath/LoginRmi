@@ -11,12 +11,14 @@ package login_imprement;
  */
 import Menus.Carteira;
 import Menus.MenuCantina;
+import Menus.MenuCantinaClient;
 import java.rmi.*;
 import java.rmi.server.UnicastRemoteObject;
+import javax.swing.JOptionPane;
 import loginform_rmi.LoginInterface;
 public class LoginImplement extends UnicastRemoteObject implements LoginInterface
 {
-    
+    Carteira cart = new Carteira();
 
     public LoginImplement()throws RemoteException
     {
@@ -34,11 +36,22 @@ public class LoginImplement extends UnicastRemoteObject implements LoginInterfac
             //    System.out.println("Seu saldo é de:"+cart1.getCarteira());
    // MenuCantina menucan = new MenuCantina();
          //   menucan.menu();
-                return found=true;
+             
                 
                 
                 
-              
+                  JOptionPane.showMessageDialog(null, "Login com sucesso");
+                System.out.println("Seu saldo é de:"+cart.getCarteira());
+            MenuCantina menucan = new MenuCantina();
+                MenuCantinaClient menunca1 = new MenuCantinaClient();
+            
+                
+                
+           // menucan.menu();
+            
+            menunca1.menu();
+            
+               return found=true;
                 
             }
             else

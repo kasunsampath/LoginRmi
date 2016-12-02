@@ -129,7 +129,7 @@ public class Login2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Carteira cart = new Carteira();
+        
         boolean f=false;
         try 
         {
@@ -138,10 +138,7 @@ public class Login2 extends javax.swing.JFrame {
             f=i.getLogin(txtusername.getText(),txtSenha.getText());
             if(f==true)
             {
-                JOptionPane.showMessageDialog(null, "Login com sucesso");
-                System.out.println("Seu saldo é de:"+cart.getCarteira());
-            MenuCantina menucan = new MenuCantina();
-            menucan.menu();
+            
             }
             else {
                 JOptionPane.showMessageDialog(null, "Login Fail");

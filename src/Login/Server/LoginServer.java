@@ -9,6 +9,7 @@ package Login.Server;
  *
  * @author User
  */
+import Menus.Fila;
 import java.rmi.*;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -16,6 +17,7 @@ import login_imprement.LoginImplement;
 import login_imprement.MenuImplemente;
 public class LoginServer 
 {
+               public static Fila f = new Fila ();
  public static void main(String[]args)
  {
      try 
